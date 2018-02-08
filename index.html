@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Subset Generator</title>
+  <meta name="description" content="JSON Subset String Generator">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"></script>
+  <script type="text/javascript" src="./loadcheckbox.js">
+</script>
+</head>
+
+<body>
+	<div id="components"> 
+		<div class="header">COMPONENTS</div>
+		<div id="USERINTERFACE">User Interface<br></div><hr>
+		<div id="LAYOUT">Layout<br></div><hr>
+		<div id="MEDIA">Media<br></div><hr>
+		<div id="ANIMATION">Animation<br></div><hr>
+		<div id="SENSORS">Sensors<br></div><hr>
+		<div id="SOCIAL">Social<br></div><hr>
+		<div id="STORAGE">Storage<br></div><hr>
+		<div id="CONNECTIVITY">Connectivity<br></div><hr>
+		<div id="LEGOMINDSTORMS">Lego Mindstorms<br></div><hr>
+		<div id="EXPERIMENTAL">Experimental<br></div><hr>
+		<div id="EXTENSION">Extension<br></div><hr>
+	</div>
+	<div id="blocks">
+		<div class="header">BLOCKS</div> 
+		<div id="Control">Control<br></div><hr>
+		<div id="Logic">Logic<br></div><hr>
+		<div id="Math">Math<br></div><hr>
+		<div id="Text">Text<br></div><hr>
+		<div id="Lists">Lists<br></div><hr>
+		<div id="Colors">Colors<br></div><hr>
+		<div id="Variables">Variables<br></div><hr>
+		<div id="Procedures">Procedures<br></div><hr>
+		<div id="ComponentBlocks"></div>
+	</div>
+	<div id = "json">
+		<div class="header">JSONSTRING</div>
+		<button type="button" id="generatebutton">Generate!</button>
+		<div id="jsonStr"></div>
+		<br>
+
+		<div id="copyDiv">
+			<button type="button" id="copybutton">Copy to Clipboard</button>
+		</div>
+		<br>
+		<div id="saveDiv">
+			<input type="text" class="form-control" id="input-saveFile" value="savedJSON" placeholder="Enter file name">
+			<button type="button" id="savebutton">Save</button>
+		</div>
+
+		<br>
+		<div id="loadDiv">
+			<input type="file" id="loadfile">
+			<button type="button" id="loadbutton">Load</button>
+		</div>
+	</div>
+</body>
+</html>
